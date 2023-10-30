@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn personal_blog.wsgi
+web: gunicorn 'personal_blog.wsgi'
