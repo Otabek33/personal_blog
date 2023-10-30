@@ -128,12 +128,6 @@ TEMPLATES = [
     },
 ]
 
-# STATIC_URL = "static/"
-# STATICFILES_DIRS = (
-#     BASE_DIR, 'static')
-# MEDIA_URL = "media/"
-# MEDIA_ROOT = (BASE_DIR, "media")
-# STATIC
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#static-root
 STATIC_ROOT = str(BASE_DIR / "staticfiles")

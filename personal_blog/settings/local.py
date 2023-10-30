@@ -38,7 +38,7 @@ SECRET_KEY = env(
     default="lpw40)dfj%p0e5-_j5rm*$n1^ivn^p#0!8b!_rx587=ztaud2_",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
 
 # CACHES
 # ------------------------------------------------------------------------------
@@ -57,15 +57,6 @@ SELECT2_CACHE_BACKEND = "default"
 # http://whitenoise.evans.io/en/latest/django.html#using-whitenoise-in-development
 INSTALLED_APPS = ["whitenoise.runserver_nostatic"] + INSTALLED_APPS  # noqa F405
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': "postgres",
-#         'USER': 'user',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
 
 # django-debug-toolbar
 # ------------------------------------------------------------------------------
